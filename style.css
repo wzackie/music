@@ -1,0 +1,276 @@
+*{
+    padding:0PX;
+    margin:0PX;
+    box-sizing: border-box;
+    font-family: 'PT Sans', sans-serif;
+}
+:root {
+    --r: #b90415;
+    --r-h: #d3071b;
+    --b: #103063;
+    --b-h: #143f85;
+    --w: #f4f4f4;
+}
+
+/* <!-- ///////////   NAV  /////////// --> */
+
+nav{
+    background-color:#333;    
+    height:45px;
+    width:100vw;
+    position:fixed;
+    z-index:1;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+}
+nav ul li {
+    padding:13px 25px;
+}
+nav ul li a {
+    text-decoration: none;
+    color: #ebe9e9;
+    font-size:14px;
+}
+nav ul li:hover {
+    background-color:#1f1e1e;
+}
+/*<!-- //////////   bg - MYTUNES.    //////// -->*/
+section .myTunes {
+    background-image:url(OIP.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    height:100vh;
+    box-shadow:1px 1px 100px #333 ;
+}
+section .myTunes div{
+    height:80vh;
+    width:88vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color:#fff;
+}
+section .myTunes div h1{
+    font-size:64px;
+    padding:40px 0 0 ;
+}
+section .myTunes div h2{
+    font-size:32px;
+    margin:25px 0 0 ;
+}
+section .myTunes div p{
+    font-size:20.8px;
+    margin:20.8px 0;
+}
+/* <!-- ////////////   bg - MUSIC.    ///////////// --> */
+section .music {
+    height:148vh;
+    background-color:#252529;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow:1px 1px 100px #333 ;
+}
+section .music .music-one {
+    height:50vh;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top:45px;
+}
+section .music .music-one h1{
+    padding:20px;
+    font-size:40px;
+    text-transform: capitalize;
+    font-family: 'PT Sans', sans-serif;
+}
+section .music .music-one h3{
+    padding:20px;
+    font-size:30px;
+}
+section .music .music-one p{
+    margin:20px;
+    font-size:20.8px;
+    text-align: center;
+    line-height:35px;
+    width:95%;
+}
+section .music .music-one button{
+    background-color:var(--r);
+    border: none;
+    padding:20px 25px;
+    margin:10px;
+}
+section .music .music-one button a{
+    color: var(--w);
+    text-decoration: none;
+}
+section .music .music-one button:hover{
+    background-color:var(--r-h);
+}
+section .music .music-one .p{
+    font-size:15px;
+    padding-bottom:90px;
+}
+section .music .music-two img{
+    width:90%;
+}
+section .music .music-two {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height:50%;
+}
+/*///////////    The movie      /////////////*/
+main .container {
+    padding:30px;
+    background-color:rgb(196, 194, 194);
+    color:#333333;
+    height:153vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+main .container h1{
+    font-size:33px;
+    font-weight:500;
+    padding:10px 0;
+}
+main .container p{
+    text-align: center;
+    font-size:20.8px;
+    line-height:35px;
+    margin:20px 10px;
+}
+main .container button{
+    background-color:var(--b);
+    padding:19px 16px;
+    font-size:16px;
+    border: none;
+    margin-top:10px;
+    margin-bottom:40px;
+}
+main .container button:hover{
+    background-color:var(--b-h);
+}
+main .container button a{
+    color: #fff;
+    text-decoration: none;
+}
+main .container button a:hover{
+    text-decoration:underline;
+}
+main .container img{
+    width:90%;
+    height:60%;
+}
+/* /////////////////////// */
+main .content{
+    background-image:url(section-bg.jpg);
+    background-position:bottom;
+    background-size: cover;
+    padding:10rem;
+    color:var(--w);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index:2;
+}
+main .content h1{
+    margin:32px 0;
+    font-size:32px;
+    text-align: center;
+}
+main .content p{
+    width:90vw;
+    margin:20.8px 0;
+    font-size:20.8px;
+    text-align: center;
+    line-height:2rem;
+}
+/* /////////////////////////////// */
+main .box {
+    background-color:#c4c2c2;
+    gap:20px;
+    display: flex;
+    justify-content:space-around;
+    padding-top:30px;
+}
+main .box .one{
+    display: flex;
+    align-items: center;
+}
+main .box .two{
+    color: #333333;
+}
+main .box .two h4{
+    font-size:24px;
+    margin:19.92px 0;
+}
+main .box .two .p{
+    width:95%;
+    font-size:16px;
+    margin:16px 0;
+    line-height:1.5rem;
+}
+main .box .two p{
+    margin:16px 0;
+    font-size:16px;
+}
+main .box .two p a{
+    color:#103063;
+    font-size:16px;
+    text-decoration: none;
+}
+/*///////////  FOOYER   /////////////*/
+footer{
+    display: flex;
+    justify-content: space-around;
+    background-color:#252529;
+    color:#ffff;
+    padding:50px;
+}
+footer div ul hr{
+    width:230px;
+    border:0.1px solid #555555;
+}
+footer div ul .h-o{
+    text-transform: capitalize;
+    font-size:19.2px;
+    margin-bottom: 1rem;
+}
+footer div ul .li{
+    padding:5px;
+}
+footer div ul li{
+    list-style: none;
+    padding:2px;
+}
+footer div ul li a{
+    text-decoration: none;
+    color:#cccccc;
+    font-size:14px;
+}
+footer div ul li a:hover{
+    text-decoration: underline;
+
+}
+.footer{
+    background-color:#333;
+    color:var(--w);
+    display: flex;
+    justify-content: center;
+    padding:20px;
+}
+/* //////////////////////////// */
